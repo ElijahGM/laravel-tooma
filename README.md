@@ -34,6 +34,17 @@ Edit default configuration such as
 
 ## Usage
  ### Retrive ApiKey
+ ```
+ $tooma->onSuccess(function($response,$pagination){
+               // Logic when Login is successfull
+               echo $response->apikey;
+
+			})
+         ->onError(function($response){
+         	  // Logic on Error 
+
+            })->login(['username'=>'YOUR_TOOMA_USERNAME','password'=>'YOUR_TOOMA_PASSWORD']);
+ ```
 
  ### Sending Message
 
@@ -51,7 +62,7 @@ Edit default configuration such as
 
  ### Schedule Message
 
- 
+
 
 ## Support
 Feel free to post your issues in the issues section.
