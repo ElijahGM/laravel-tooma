@@ -7,10 +7,14 @@ use Illuminate\Support\ServiceProvider;
 use Tooma\APi\Sender;
 class ToomaServiceProvider extends ServiceProvider
 {
+    protected $defer = false;
+    protected $configPath  = __DIR__.'/../config/';
+    protected $configName = 'tooma-api';
+
 
     public function boot()
     {
-       $this->publishes([__DIR__.'/../config/tooma.php' => config_path('tooma.php')]);
+       $this->publishes([$this->config_path.$this->configName.".php" => config_path($this->configName.".php")],'config');
     }
     /**
      * Register bindings in the container.
@@ -19,11 +23,14 @@ class ToomaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Sender::class, function ($app) {
-            $config = config('tooma');
-            $apiKey = $config['apiKey'];
-            
-            return new Sender($apiKey);
+      
+        $this->mergeConfigFrom($this->config_path.$this->configName.".php", $this->configName);
+        $this->app->bind(Sender::class, Sender::class);
+        $this->app->alias('TOOMA', Sender::class);
+
+        $this->app->singleton('TOOMA', function ($app) {        
+
+            return new Sender(config('tooma-api.apiKey', null),config('tooma-api.defaultSSlPath', null));
         });
     }
 }

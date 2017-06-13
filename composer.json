@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Tooma\\Api\\": "src/"
+            "Tooma\\Laravel\\Api\\": "src/"
         }
     },
     "minimum-stability": "stable"
