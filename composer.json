@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "tooma/sms-api":"0.0.1"          
+        "tooma/sms-api":"*"          
     },
     "autoload": {
         "psr-4": {
