@@ -11,12 +11,12 @@
         }
     ],
     "require": {
-        "tooma/sms-api":"dev-master"          
+        "tooma/sms-api":"0.0.1"          
     },
     "autoload": {
         "psr-4": {
             "Tooma\\Laravel\\Api\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
