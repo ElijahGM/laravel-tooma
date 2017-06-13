@@ -28,7 +28,7 @@ class ToomaServiceProvider extends ServiceProvider
         $this->app->bind(Sender::class, Sender::class);
         $this->app->alias('TOOMA', Sender::class);
 
-        $this->app->singleton('TOOMA', function ($app) {        
+        $this->app->singleton('tooma', function ($app) {        
 
             return new Sender(config('tooma-api.apiKey', null),config('tooma-api.defaultSSlPath', null));
         });

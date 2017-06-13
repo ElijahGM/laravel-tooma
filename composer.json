@@ -18,5 +18,5 @@
             "Tooma\\Laravel\\Api\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
