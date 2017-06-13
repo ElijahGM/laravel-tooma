@@ -1,7 +1,7 @@
 {
-    "name": "laravel/tooma-sms-api",
+    "name": "tooma/laravel-sms-api",
     "description": "Send and receive SMS anywhere in the world using our web services",
-    "keywords": ["sms", "laravel", "text messages", "send", "receive","tooma","yii2"],
+    "keywords": ["sms", "laravel", "text message", "send", "receive","tooma"],
     "homepage": "http://www.tooma.co.ke",
     "license": "MIT",
     "authors": [
