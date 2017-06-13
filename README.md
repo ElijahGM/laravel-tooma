@@ -23,10 +23,13 @@ php artisan vendor:publish --provider="Tooma\Laravel\Api\ToomaServiceProvider"
 ## Configuration
 Once the config file is published, open ```config/tooma-api.php```
 
-#### Edit config]
+### Edit config
 Edit default configuration such as 
+
 ```apiKey``` : Your API key provider by Tooma
+
 ```defaultSSLPath```    : Default path to ssl certificate if using a different certificate from default one 
+
 ```defaultSenderName``` : Default sender name defaults to TOOMA_SMS (in Kenya)
 
 ## Usage
