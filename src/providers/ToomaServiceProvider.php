@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Tooma\Api\Providers;
+namespace Tooma\Laravel\Api\Providers;
 
 
 use Illuminate\Support\ServiceProvider;
