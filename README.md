@@ -33,7 +33,25 @@ Edit default configuration such as
 ```defaultSenderName``` : Default sender name defaults to TOOMA_SMS (in Kenya)
 
 ## Usage
-Refer to tooma api for documentation
+ ### Retrive ApiKey
+
+ ### Sending Message
+
+ ### Sending Bulk Messages
+
+ ### Retrive All Messages
+
+ ### Retrieve Message Status
+
+ ### Get account balancce
+
+ ### Send Message from CSV files
+
+ ### Working with Message templates
+
+ ### Schedule Message
+
+ 
 
 ## Support
 Feel free to post your issues in the issues section.
