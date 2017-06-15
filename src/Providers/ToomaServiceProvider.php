@@ -4,7 +4,7 @@ namespace Tooma\Laravel\Api\Providers;
 
 
 use Illuminate\Support\ServiceProvider;
-use Tooma\APi\Sender;
+use Tooma\Api\Sender;
 class ToomaServiceProvider extends ServiceProvider
 {
     
