@@ -12,12 +12,12 @@ composer require tooma/laravel-sms-api
 ```
 Once the package is added, add the ServiceProvider to the providers array in ```config/app.php```:
 ```
-Tooma\Laravel\Api\ToomaServiceProvider::class
+Tooma\Laravel\Api\Providers\ToomaServiceProvider::class
 
 ```
 Once done, publish the config to your config folder using:
 ```
-php artisan vendor:publish --provider="Tooma\Laravel\Api\ToomaServiceProvider"
+php artisan vendor:publish --provider="Tooma\Laravel\Api\Providers\ToomaServiceProvider"
 ```
 
 ## Configuration
